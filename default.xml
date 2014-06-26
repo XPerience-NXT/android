@@ -12,19 +12,32 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
+<remote  name="XPerience"
+           fetch="https://github.com/XPerience-NXT" />
+
+  <remote name="sm"
+           fetch="https://github.com/SaberMod/" />
+
+  <remote name="aospal"
+           fetch="https://github.com/AOSPAL/" />
+
+<remote  name="Gitr"
+           fetch="http://github.com" />   
+
   <default revision="refs/heads/cm-11.0"
            remote="github"
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="CyanogenMod/android_build" groups="pdk" >
+  <project path="build" name="XPerience-NXT/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
+    <copyfile src="NXT.mk" dest="xpe" />
   </project>
 
   <project path="android" name="CyanogenMod/android" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
-  <project path="art" name="CyanogenMod/android_art" />
+  <project path="art" name="XPerience-NXT/android_art" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
@@ -285,14 +298,14 @@
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
   <project path="external/zxing" name="CyanogenMod/android_external_zxing" />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" />
+  <project path="frameworks/base" name="XPerience-NXT/android_frameworks_base" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
   <project path="frameworks/ex" name="CyanogenMod/android_frameworks_ex" />
   <project path="frameworks/mff" name="CyanogenMod/android_frameworks_mff" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" />
-  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk" />
+  <project path="frameworks/native" name="XPerience-NXT/android_frameworks_native" groups="pdk" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar" />
   <project path="frameworks/opt/carddav" name="CyanogenMod/android_frameworks_opt_carddav" />
   <project path="frameworks/opt/colorpicker" name="CyanogenMod/android_frameworks_opt_colorpicker" />
@@ -309,7 +322,7 @@
   <project path="frameworks/opt/telephony-msim" name="CyanogenMod/android_frameworks_opt_telephony-msim" />
   <project path="frameworks/opt/vcard" name="CyanogenMod/android_frameworks_opt_vcard" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
-  <project path="frameworks/rs" name="CyanogenMod/android_frameworks_rs" groups="pdk" />
+  <project path="frameworks/rs" name="XPerience-NXT/android_frameworks_rs" groups="pdk" />
   <project path="frameworks/support" name="CyanogenMod/android_frameworks_support" />
   <project path="frameworks/testing" name="CyanogenMod/android_frameworks_testing" />
   <project path="frameworks/volley" name="CyanogenMod/android_frameworks_volley" />
@@ -358,8 +371,8 @@
   <project path="packages/apps/CertInstaller" name="CyanogenMod/android_packages_apps_CertInstaller" />
   <project path="packages/apps/CMAccount" name="CyanogenMod/android_packages_apps_CMAccount" />
   <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" />
+<!--  <project path="packages/apps/CMUpdater" name="CyanogenMod/android_packages_apps_CMUpdater" />-->
   <project path="packages/apps/CMHome" name="CyanogenMod/android_packages_apps_CMHome" />
-  <project path="packages/apps/CMUpdater" name="CyanogenMod/android_packages_apps_CMUpdater" />
   <project path="packages/apps/CMWallpapers" name="CyanogenMod/android_packages_apps_CMWallpapers" />
   <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts" />
   <project path="packages/apps/ContactsCommon" name="CyanogenMod/android_packages_apps_ContactsCommon" />
@@ -374,12 +387,14 @@
   <project path="packages/apps/KeyChain" name="CyanogenMod/android_packages_apps_KeyChain" />
   <project path="packages/apps/LockClock" name="CyanogenMod/android_packages_apps_LockClock" />
   <project path="packages/apps/Mms" name="CyanogenMod/android_packages_apps_Mms" />
+  <project path="packages/apps/Notepad" name="XPerience-NXT/android_packages_apps_Notepad" />
   <project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
   <project path="packages/apps/PackageInstaller" name="CyanogenMod/android_packages_apps_PackageInstaller" />
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" />
-  <project path="packages/apps/Settings" name="CyanogenMod/android_packages_apps_Settings" />
+  <project path="packages/apps/ScreenRecorder" name="XPerience-NXT/android_packages_apps_ScreenRecorder" revision="kitkat" />
+  <project path="packages/apps/Settings" name="XPerience-NXT/android_packages_apps_Settings" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" />
   <project path="packages/apps/SpeechRecorder" name="CyanogenMod/android_packages_apps_SpeechRecorder" />
@@ -392,6 +407,7 @@
   <project path="packages/apps/VideoEditor" name="CyanogenMod/android_packages_apps_VideoEditor" />
   <project path="packages/apps/VoiceDialer" name="CyanogenMod/android_packages_apps_VoiceDialer" />
   <project path="packages/apps/VoicePlus" name="CyanogenMod/android_packages_apps_VoicePlus" />
+  <project path="packages/apps/XPerienceSetupWizard" name="XPerience-NXT/XPerience_Setup_Wizard" />
   <project path="packages/experimental" name="CyanogenMod/android_packages_experimental" />
   <project path="packages/inputmethods/LatinIME" name="CyanogenMod/android_packages_inputmethods_LatinIME" />
   <project path="packages/inputmethods/OpenWnn" name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
@@ -457,6 +473,7 @@
   <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" groups="linux,x86" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
   <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" groups="pdk,linux,x86" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.7" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.7" groups="pdk,linux,x86" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
+  <project path="prebuilts/gcc/linux-x86/arm/android-toolchain-eabi-xpe" name="XPerience-NXT/XPerience-Linaro-ToolChain-arm-eabi" groups="pdk,linux,arm" remote="Gitr" revision="4.8.3-14.01" />
   <project path="prebuilts/misc" name="CyanogenMod/android_prebuilts_misc" groups="pdk" />
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" remote="aosp" revision="refs/tags/android-4.4.4_r1" groups="pdk" />
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
@@ -466,7 +483,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="refs/tags/android-4.4.4_r1" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.4.4_r1" groups="pdk,tools" />
   <project path="sdk" name="CyanogenMod/android_sdk" />
-  <project path="system/core" name="CyanogenMod/android_system_core" groups="pdk" />
+  <project path="system/core" name="XPerience-NXT/android_system_core" groups="pdk" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" />
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" />
@@ -483,6 +500,21 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
-  <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
+  <project path="vendor/XPerience" name="XPerience-NXT/android_vendor_XPe" remote="Gitr" />
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" />
+
+    <!--some new adds-->
+  <project path="external/focal" name="xplodwild/android_external_Focal" remote="github" revision="master" />
+  <project path="packages/apps/focal" name="xplodwild/android_packages_apps_Focal" remote="github" revision="master" />
+
+   <!--CAF-NEW!-->
+  <project path="hardware/qcom/display-caf-new" name="XPerience-NXT/android_hardware_qcom_display-caf-new" remote="github" />
+  <project path="hardware/qcom/media-caf-new" name="XPerience-NXT/android_hardware_qcom_media-caf-new" remote="github" />
+  
+   <!--Changed XPerience linaro to Sabermod linaro-->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="sm" revision="sm-kk-mr1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERUTILS/arm-linux-androideabi-4.8" remote="Gitr" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-4.8" name="x86_64-linux-4.8" remote="aospal" revision="kitkat" groups="pdk,linux" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-4.8" name="i686-linux-4.8" remote="aospal" revision="kitkat" groups="pdk,linux" />
+
 </manifest>
