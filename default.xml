@@ -22,7 +22,10 @@
            fetch="https://github.com/AOSPAL/" />
 
 <remote  name="Gitr"
-           fetch="http://github.com" />   
+           fetch="http://github.com/" />   
+
+<remote  name="blobs"
+           fetch="https://github.com/TheMuppets/" />   
 
   <default revision="refs/heads/cm-11.0"
            remote="github"
