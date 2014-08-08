@@ -37,7 +37,7 @@
     <copyfile src="NXT.mk" dest="xpe" />
   </project>
 
-  <project path="android" name="CyanogenMod/android" />
+  <project path="android" name="XPerience-NXT/android" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="XPerience-NXT/android_art" />
@@ -525,7 +525,6 @@
    <!--Changed XPerience linaro to Sabermod linaro-->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="sm" revision="sm-kk-mr1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERUTILS/arm-linux-androideabi-4.8" remote="Gitr" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-4.8" name="x86_64-linux-4.8" remote="aospal" revision="kitkat" groups="pdk,linux" />
-  <project path="prebuilts/gcc/linux-x86/host/i686-linux-4.8" name="i686-linux-4.8" remote="aospal" revision="kitkat" groups="pdk,linux" />
-
+ <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-4.8" name="x86_64-linux-4.8" remote="aospal" revision="kitkat" groups="pdk,linux" />
+ <project path="prebuilts/gcc/linux-x86/host/i686-linux-4.8" name="i686-linux-4.8" remote="aospal" revision="kitkat" groups="pdk,linux" />
 </manifest>
